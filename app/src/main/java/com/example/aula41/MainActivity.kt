@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,16 +16,16 @@ class MainActivity : AppCompatActivity() {
         //binding
 
                                  //editText
-        val editNome: EditText = findViewById(R.id.editNome)
-        val editEmail: EditText = findViewById(R.id.editEmail)
-        val editTelefone: EditText = findViewById(R.id.editTelefone)
+        //val editNome: EditText = findViewById(R.id.editNome)
+        //val editEmail: EditText = findViewById(R.id.editEmail)
+        //val editTelefone: EditText = findViewById(R.id.editTelefone)
 
                                  //Checkbox
-        val checkTelefone: CheckBox = findViewById(R.id.checkTelefone)
-        val checkEmail: CheckBox = findViewById(R.id.checkEmail)
+        //val checkTelefone: CheckBox = findViewById(R.id.checkTelefone)
+        //val checkEmail: CheckBox = findViewById(R.id.checkEmail)
 
                                   //Button
-        val buttonRegistrar: Button = findViewById(R.id.buttonRegistrar)
+        //val buttonRegistrar: Button = findViewById(R.id.buttonRegistrar)
 
 
         //Configuração do botão
@@ -39,29 +40,24 @@ class MainActivity : AppCompatActivity() {
                     |Email: ${editEmail.text}
                     |Contato por telefone: ${checkTelefone.isChecked}
                     |Contato por Email: ${checkEmail.isChecked}
-                   
+                    
                     """.trimMargin()
 
 
-                showMsg("${editNome.text}" + "Seus dados foram armazenados", msg)
+                showMsg("${editNome.text}" + ", Seus dados foram armazenados", msg, this)
             }
 
 
             else {
-                showMsg("Impossivel Prosseguir", "Existem Campos não Preenchidos")
+                showMsg("Impossivel Prosseguir", "Existem Campos não Preenchidos", this)
             }
+
+
 
         }
 
 
     }
 
-    fun showMsg(titulo: String, msg: String){
-        AlertDialog.Builder(this)
-            .setTitle(titulo)
-            .setMessage(msg)
-            .setPositiveButton("Ok", null)
-            .create()
-            .show()
-    }
+
 }

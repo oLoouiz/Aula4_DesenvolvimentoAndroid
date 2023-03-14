@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aula4.1</string>
+    <string name="nome">Nombre</string>
+    <string name="telefone">Telefone</string>
+    <string name="preferencia_de_contato">Preferencias de contacto</string>
+    <string name="telefonee">Telefone</string>
+    <string name="registrar">Registor</string>
+</resources>

@@ -1,9 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Aula4.1</string>
     <string name="nome">Nome</string>
-    <string name="telefone">Telefone</string>
     <string name="preferencia_de_contato">Preferencia de contato:</string>
     <string name="telefonee">Telefone</string>
-    <string name="email">Email</string>
     <string name="registrar">Registrar</string>
 </resources>
